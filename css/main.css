@@ -65,7 +65,7 @@ h4, h5, h6 {
 }
 
 span.color {
-	color: #0feb9e;
+	color: #ffc107;
 }
 
 body > section,
@@ -220,7 +220,7 @@ body > section,
 
 .carousel-caption p:before,
 .carousel-caption p:after {
-color: #0feb9e;
+color: #ff9800;
 content: "___";
 position: relative;
 top: -8px;
@@ -728,4 +728,8 @@ label.error {
   position: fixed;
   right: 25px;
   z-index: 9;
+}
+.project-wrapper img{
+  width: 400px;
+  height: 300px;
 }
