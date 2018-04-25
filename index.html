@@ -491,11 +491,14 @@
         </div>
         <!-- contact address -->
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms" style="text-align:center">
-          <div class="contact-address">
+          <div class="contact-address" >
             <h3>穿越火线北京一区</h3>
             <p>歼灭频道</p>
             <p>中央战队</p>
             <p>恭迎您的大驾</p>
+          </div>
+          <div class="contact-address">
+           <img src="ma/ma.jpg" alt="扫码进群">
           </div>
         </div>
         <!-- end contact address -->
@@ -619,7 +622,7 @@
   <script src="js/jquery.easing.min.js"></script>
   <!-- jquery easing -->
   <script src="js/wow.min.js"></script>
-  <script>
+  <script>d
   var wow = new WOW({
     boxClass: 'wow', // animated element css class (default is wow)
     animateClass: 'animated', // animation css class (default is animated)
@@ -632,60 +635,60 @@
   <!-- Custom Functions -->
   <script src="js/custom.js"></script>
   <script type="text/javascript">
-  $(function() {
-    /* ========================================================================= */
-    /*	Contact Form
-    /* ========================================================================= */
+  // $(function() {
+  //   /* ========================================================================= */
+  //   /*	Contact Form
+  //   /* ========================================================================= */
 
-    $('#contact-form').validate({
-      rules: {
-        name: {
-          required: true,
-          minlength: 2
-        },
-        email: {
-          required: true,
-          email: true
-        },
-        message: {
-          required: true
-        }
-      },
-      messages: {
-        name: {
-          required: "come on, you have a name don't you?",
-          minlength: "your name must consist of at least 2 characters"
-        },
-        email: {
-          required: "no email, no message"
-        },
-        message: {
-          required: "um...yea, you have to write something to send this form.",
-          minlength: "thats all? really?"
-        }
-      },
-      submitHandler: function(form) {
-        $(form).ajaxSubmit({
-          type: "POST",
-          data: $(form).serialize(),
-          url: "process.php",
-          success: function() {
-            $('#contact-form :input').attr('disabled', 'disabled');
-            $('#contact-form').fadeTo("slow", 0.15, function() {
-              $(this).find(':input').attr('disabled', 'disabled');
-              $(this).find('label').css('cursor', 'default');
-              $('#success').fadeIn();
-            });
-          },
-          error: function() {
-            $('#contact-form').fadeTo("slow", 0.15, function() {
-              $('#error').fadeIn();
-            });
-          }
-        });
-      }
-    });
-  });
+  //   $('#contact-form').validate({
+  //     rules: {
+  //       name: {
+  //         required: true,
+  //         minlength: 2
+  //       },
+  //       email: {
+  //         required: true,
+  //         email: true
+  //       },
+  //       message: {
+  //         required: true
+  //       }
+  //     },
+  //     messages: {
+  //       name: {
+  //         required: "come on, you have a name don't you?",
+  //         minlength: "your name must consist of at least 2 characters"
+  //       },
+  //       email: {
+  //         required: "no email, no message"
+  //       },
+  //       message: {
+  //         required: "um...yea, you have to write something to send this form.",
+  //         minlength: "thats all? really?"
+  //       }
+  //     },
+  //     submitHandler: function(form) {
+  //       $(form).ajaxSubmit({
+  //         type: "POST",
+  //         data: $(form).serialize(),
+  //         url: "process.php",
+  //         success: function() {
+  //           $('#contact-form :input').attr('disabled', 'disabled');
+  //           $('#contact-form').fadeTo("slow", 0.15, function() {
+  //             $(this).find(':input').attr('disabled', 'disabled');
+  //             $(this).find('label').css('cursor', 'default');
+  //             $('#success').fadeIn();
+  //           });
+  //         },
+  //         error: function() {
+  //           $('#contact-form').fadeTo("slow", 0.15, function() {
+  //             $('#error').fadeIn();
+  //           });
+  //         }
+  //       });
+  //     }
+  //   });
+  // });
   </script>
 </body>
 
